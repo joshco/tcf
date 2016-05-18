@@ -539,10 +539,10 @@ nav.width-container .sub a:active, .subnav .sub a:active, nav.width-container .s
 nav.width-container .sub:before, .subnav .sub:before, nav.width-container .sub-menu:before, .subnav .sub-menu:before {
 	display: block;
 	position: absolute;
-	top: -20px;
+	top: -10px;
 	width: 100%;
 	height: 20px;
-	line-height: 30px;
+	line-height: 10px;
 	content: "\25B2";
 	text-align: center;
 	color: #5b5b5b;

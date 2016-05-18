@@ -7,8 +7,13 @@
 
 get_header(); ?>
 
+<div class="page-header-container">
+	<?php the_post_thumbnail(‘full’, array('class' => ‘header-image’)); ?>
+	</div><!-- .page-header-container -->
+
 <div class="main-container" id="middle">
 	<div class="main width-container clearfix">
+
       
 		<!-- _columns_2.html -->
 		<div class="twocolumn-container clearfix">

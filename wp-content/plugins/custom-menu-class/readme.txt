@@ -2,7 +2,7 @@
 Contributors: Theodoros Fabisch
 Tags: menu, classes, menu class, css class, css classes, predefined css class
 Requires at least: 3.7
-Tested up to: 4.3
+Tested up to: 4.5
 Stable tag: trunk
 License: GPL2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -66,3 +66,9 @@ Set the CSS classes in the Custom Menu Class settings page under 'Options -> Men
 
 = 0.2.5 =
 * changed WP_Query to get_posts
+
+= 0.2.6 =
+* bugfix get_post_meta in wp 4.5
+
+= 0.2.6.1 =
+* bugfix get_post_meta in wp < 4.5

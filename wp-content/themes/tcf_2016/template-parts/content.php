@@ -24,9 +24,10 @@
 
 <div class="headline">
 
-	<?php the_title( '<h2 class="entry-title">', '</h2>' ); 
+	<?php the_title( '<h2 class="entry-title">', '</h2>' );
 
 		if ( 'post' === get_post_type() ) : ?>
+		<?php the_subheading( '<h3 class="entry-subhed">', '</h3>' ); ?>
 		<div class="entry-meta">
 			<?php tcf_2016_posted_on(); ?>
 		</div><!-- .entry-meta -->
@@ -54,5 +55,3 @@
 	<footer class="entry-footer">
 		<?php tcf_2016_entry_footer(); ?>
 	</footer>--><!-- .entry-footer -->
-
-

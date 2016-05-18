@@ -10,6 +10,8 @@
 ?>
 
 <?php the_title( '<h2 class="entry-title headline">', '</h2>' ); ?>
+<?php the_subheading( '<h3 class="entry-subhed">', '</h3>' ); ?>
+
 
 <div id="content">
 

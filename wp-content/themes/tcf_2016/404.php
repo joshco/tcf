@@ -20,8 +20,9 @@ get_header(); ?>
 
 			<div class="content-pages-show-basic">
 					<p>The page you were looking for was not found.</p>
-
-			</div><!-- .left_column -->
+			</div>
+			
+	       </div><!-- .left_column -->
 
 <?php
 get_sidebar();

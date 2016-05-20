@@ -37,4 +37,4 @@ get_sidebar();
       <!-- .main-container --> 
 
 <?php
-get_footer();
+get_footer(); 

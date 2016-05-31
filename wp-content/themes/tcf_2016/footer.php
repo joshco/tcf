@@ -48,9 +48,26 @@
             
             <!-- _footer_nav.html -->
             <nav id="footer-menu" role="navigation" class="width-container">
-	            <?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_id' => 'footer-menu' ) ); ?>
-              <div id="footer_sm"> <span class="footer-text">Follow Us</span> <a id="" class="footer_facebook header_sm_img" href="https://www.facebook.com/TheTylerClementiFoundation"></a> <a id="" class="footer_twitter header_sm_img" href="https://twitter.com/tylerclementi"></a> <a id="" class="footer_youtube header_sm_img" href="https://www.youtube.com/user/tylerclementifund"></a> </div>
-              <a id="back-to-top-link" class="mobile-visible" href="#">Return to Top</a> </nav>
+	         <!--   <?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_id' => 'footer-menu' ) ); ?> -->
+	        	<div id="footer-menu-about" class="footer-menu"> 
+					<?php wp_nav_menu( array('menu' => 'Footer Menu About' )); ?>
+	        	</div>
+				<div id="footer-menu-programs" class="footer-menu"> 
+	            	<?php wp_nav_menu( array('menu' => 'Footer Menu Programs' )); ?>
+	        	</div>
+	        	<div id="footer-menu-action" class="footer-menu">
+					<?php wp_nav_menu( array('menu' => 'Footer Menu Action' )); ?>
+	        	</div>
+	        	<div id="footer-menu-day1" class="footer-menu">
+					<?php wp_nav_menu( array('menu' => 'Footer Menu Day1' )); ?>
+				</div>
+				<div id="footer-menu-resources" class="footer-menu">
+				<?php wp_nav_menu( array('menu' => 'Footer Menu Resources' )); ?>
+				</div>
+				<div id="footer-menu-misc" class="footer-menu">
+				<?php wp_nav_menu( array('menu' => 'Footer Menu Misc' )); ?>
+				</div>
+			</nav>
             <!-- /_footer_nav.html -->
             
             
@@ -66,7 +83,7 @@
           <div class="clearfix"></div>
           <div id="footer-btm">
             <ul id="footer-btm-links">
-              <li class="footer-copyright">© Tyler Clementi Foundation. All rights reserved.</li>
+              <li class="footer-copyright">&copy; Tyler Clementi Foundation. All rights reserved.</li>
               <li><a href="/privacy-policy" >Privacy Policy</a></li>
               <li class="no-link"><a href="" >Terms of Use</a></li>
               <li class="no-link"><a href="" >Anti-bullying Policy</a></li>

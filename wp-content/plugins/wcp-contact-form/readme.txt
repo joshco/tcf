@@ -392,6 +392,9 @@ Path to the templates folder inside the active theme:
 16. Admin Panel :: Settings :: ReCAPTCHA
 
 == Changelog ==
+= 3.0.4 = 
+* Hotfix for issue with a product duplication in the WooCommerce product listing.
+
 = 3.0.3 = 
 * Added possibility to use variables for user email address, user name, subject and message. These variables allows to create "reply" notification for site administrator. **NB!** This option was added by multiple users' requests, however we **HIGHLY DO NOT RECOMMEND** to use this option. It doesn't work with SMTP email configuration and doesn't work stable with common WordPress email configuration. We do not provide any guarantee of properly work of this option and you will use it at your own risk. 
 * Added possibility to change standard WordPress "from email" and sender name. **NB!** This option was added by multiple users' requests, however we **HIGHLY DO NOT RECOMMEND** to use this option. It doesn't work with SMTP email configuration and doesn't work stable with common WordPress email configuration. We do not provide any guarantee of properly work of this option and you will use it at your own risk. 

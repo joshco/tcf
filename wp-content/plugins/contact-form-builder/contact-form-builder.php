@@ -3,14 +3,14 @@
  * Plugin Name: Contact Form Builder
  * Plugin URI: http://web-dorado.com/products/wordpress-contact-form-builder.html
  * Description: Contact Form Builder is an advanced plugin to add contact forms into your website. It comes along with multiple default templates which can be customized.
- * Version: 1.0.43
+ * Version: 1.0.44
  * Author: WebDorado
  * Author URI: http://web-dorado.com/
  * License: GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
  */
 define('WD_CFM_DIR', WP_PLUGIN_DIR . "/" . plugin_basename(dirname(__FILE__)));
 define('WD_CFM_URL', plugins_url(plugin_basename(dirname(__FILE__))));
-define('WD_CFM_VERSION', '1.0.43');
+define('WD_CFM_VERSION', '1.0.44');
 
 // Plugin menu.
 function contact_form_maker_options_panel() {

@@ -1257,6 +1257,11 @@ footer #footer-top {
 	border-color: rgba 117, 151, 165, 1!important;
 	border-color: #7597a5!important
 }
+
+footer #footer-top #footer-menu {
+	display:block;
+}
+
 footer #footer-top #footer-menu>ul>li:last-of-type {
 	background-color: none
 }
@@ -1269,13 +1274,13 @@ footer #footer-top #footer-menu #footer_sm {
 	right: 0;
 	padding-top: 10px
 }
-footer #footer-top #footer-menu #footer_sm .header_sm_img {
+footer #footer-top #footer-menu .header_sm_img {
 	margin-right: 0;
 	opacity: 1;
 	width: 35px;
 	height: 38px
 }
-footer #footer-top #footer-menu #footer_sm .footer-text {
+footer #footer-top #footer-menu .footer-text {
 	color: rgba 117, 151, 165, 1!important;
 	color: #7597a5!important;
 	float: left;

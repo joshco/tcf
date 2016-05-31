@@ -420,7 +420,7 @@ class SCFP_FormEntries extends Agp_Module {
         $post_ids = !empty($_GET['post']) ? $_GET['post'] : NULL;
         $post_type = !empty($_GET['post_type']) ? $_GET['post_type'] : NULL;
         
-        if (!empty($post_ids)) {
+        if (!empty($post_ids) && $post_type == 'form-entries') {
             check_admin_referer('bulk-posts');
             $action = ($_GET['action'] == -1) ? $_GET['action2'] : $_GET['action'];
             

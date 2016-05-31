@@ -4,7 +4,7 @@ Donate link: http://huge-it.com/slider/
 Tags: slider, slideshow, wordpress slider, content slider, image slider, Photo Slider, slider plugin, responsive slider, carousel slider, wp slider, vertical slider, image slider, post slider, video slider, touch slider, youtube slider, wordpress slideshow, gallery slider,
 Requires at least: 3.0.1
 Tested up to: 4.5.2
-Stable tag: 3.1.82
+Stable tag: 3.1.83
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -141,6 +141,26 @@ Navigate images and videos in slider using thumbnail images, with this superb fe
 When you choose dots to slide the images within the slider in you are able make some color and position customization from the slider General Options.
 
 
+= Demo 1 Mixed Slider =
+
+Mixed Slider is the way to show images and videos in one slider. Your rich content, consisting of videos and images will look amazing all together collected in one slider, using beautiful effects and other options make your website look unrepeatable.
+
+= Demo 2 Youtube Slider =
+
+Slider for YouTube videos, presentation of unlimited number of YouTube videos in one Slider. Slightly make your preferable customization on slider and enjoy scrolling YouTube links in powerful slider plugin.
+
+= Demo 3 Vimeo Slider =
+
+Our well know Vimeo source can be integrated in slider. Using Vimeo links collect all of your favorite videos in one Slider and nicely scroll them. Make changes on slider to give your videos more specific view and enjoy.
+
+= Demo 4 Post Sliders =
+
+Post Slider will hep you to watch your best posts with our best slider. Use different effects and all slider tools for sliding a sertain category of the posts, or just last posts.
+
+= Demo 5 Thumbnail Navigation =
+
+Navigate by thumbnails is modern and convenient demonstration for your website slider. It allows to see the thumbnails of your other slides, and by sliding you may follow and learn which slide is coming next.
+
 > #### Image Slider Demos.
 >
 >[Mixed Slider](http://huge-it.com/wordpress-slider-demo-1-mixed-slider/#plugin_demo_wrapper)
@@ -169,8 +189,8 @@ If you think, that you found a bug in our [WordPress Slider](http://huge-it.com/
 2. Log in to your website administrator panel   
 3. Go to the 'Add New' in the plugins dashboard, click “Upload Plugin”
 4. Upload [WordPress Slider](http://wordpress.org/plugins/slider-image) ZIP file by choosing it from your computer
-5. Click Install Now button
-6. Then click Activate slider Plugin button.
+5. Click **Install Now** button
+6. Then click **Activate Plugin** button.
 7. You can see the slider plugin installed on Wordpress left menu.
 
 
@@ -178,16 +198,16 @@ If you think, that you found a bug in our [WordPress Slider](http://huge-it.com/
 
 1. Go to the 'Add New' in the plugins dashboard
 2. Search for 'Slider Huge-IT'
-3. Click Install Now button
-4. Then click Activate Plugin button
+3. Click **Install Now** button
+4. Then click **Activate Plugin** button
 5. You can see the plugin installed on Wordpress left menu
 
 
 ### Using FTP
 
 1. Download the ZIP file from Wordpress website
-2. Extract the slider directory to your computer
-3. Upload the slider directory to the /wp-content/plugins/ directory
+2. Extract the **slider** directory to your computer
+3. Upload the **slider** directory to the **/wp-content/plugins/** directory
 4. Activate the plugin in the Plugin dashboard
 5. You can see the plugin installed on Wordpress left menu
 
@@ -296,6 +316,9 @@ There are errors in site/theme, or some other external reason, our support team 
 If you think, that you found a bug in our [WordPress Slider](http://huge-it.com/slider/) plugin or have any question contact us at [info@huge-it.com](mailto:info@huge-it.com)
 
 == Changelog ==
+
+= 3.1.83 =
+* Admin bug has been fixed
 
 = 3.1.82 =
 * Admin bug fixed

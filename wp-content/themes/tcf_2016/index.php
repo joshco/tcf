@@ -16,12 +16,12 @@ get_header(); ?>
 
 
 	<!-- IMAGE SLIDER -- BEGIN -->
-      
+      <div class="fullwidth clearfix site-logo-wrap"> 
+		  <?php 
+    echo do_shortcode("[metaslider id=638]"); 
+?>
 	<div class="header-container clearfix">
-		<div class="fullwidth clearfix site-logo-wrap"> 
-		  
-		  [ Carousel here ]
-		  
+		
 		</div>
 		<!-- fullwidth --> 
 		

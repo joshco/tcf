@@ -32,6 +32,7 @@ It has easiest checkout option to give the user better experience in purchasing 
 *	Custom download link icon
 *	File type icon support
 *   Full Featured User Dashboard ( use short-code [wpdm_user_dashboard] )
+*   Custom Front-end Login / Signup form short-code
 *   Custom oEmbed template
 *	DataTable support ( use short-code [wpdm-all-packages jstable=1 items_per_page=20] )
 *	Searching and Sorting Option
@@ -137,10 +138,15 @@ Check download stats and get push notification when someone downloads, install:
 
 == Changelog ==
 
+= 2.8.97 =
+* Fixed issue with attached file delete
+* Fixed issue with reg form
+* Fixed issue with login form
+
 = 2.8.96 =
 * Added new option for login form
 * Improved signup form
-* Improved dashboard short-code, added pamarter to control login/signup form and recommended downloads
+* Improved dashboard short-code, added parameter to control login/signup form and recommended downloads
 * Added option to control dashboard url structure
 
 = 2.8.95 =

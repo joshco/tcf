@@ -122,8 +122,8 @@ class CF7DBPlugin extends CF7DBPluginLifeCycle implements CFDBDateFormatter {
             }
         }
         require_once('CFDBViewOptions.php');
-        $optionsView = new CFDBViewOptions($this);
-        $optionsView->outputOptions();
+        $optionsView = new CFDBViewOptions();
+        $optionsView->display($this);
     }
 
         public function getOptionValueI18nString($optionValue) {
@@ -752,7 +752,12 @@ class CF7DBPlugin extends CF7DBPluginLifeCycle implements CFDBDateFormatter {
      */
     public function saveFormData($cf7) {
         try {
-            if (!empty($cf7->posted_data['submit_time']) && is_numeric($cf7->posted_data['submit_time'])) {
+            if (
+                    !empty($cf7->posted_data['submit_time']) &&
+                    (is_numeric($cf7->posted_data['submit_time']) ||
+                            // Looks like is_numeric may fail on decimal '.' when ',' is the localization
+                            preg_match('/^\d+\.?\d*$/', $cf7->posted_data['submit_time']))
+            ) {
                 $time = $cf7->posted_data['submit_time'];
                 unset($cf7->posted_data['submit_time']);
                 unset($cf7->posted_data['submit_url']);
@@ -1117,11 +1122,14 @@ class CF7DBPlugin extends CF7DBPluginLifeCycle implements CFDBDateFormatter {
             }
 
             ?>
-            <form action="<?php echo get_admin_url() . 'admin.php?page=' . $this->getDBPageSlug() . "&form_name=" . urlencode($form) ?>" method="post">
+            <div class="wrap">
+            <form action="<?php echo get_admin_url() . 'admin.php?page=' . $this->getDBPageSlug() . "&form_name=" . urlencode($form) ?>"
+                  method="post">
                 <input name="form_name" type="hidden" value="<?php echo htmlspecialchars($form) ?>"/>
                 <input name="<?php echo htmlspecialchars($submitTime) ?>" type="hidden" value="row"/>
                 <?php wp_nonce_field(); ?>
-                <button id="delete" name="cfdbdel" onclick="this.form.submit();"><?php echo htmlspecialchars(__('Delete', 'contact-form-7-to-database-extension')); ?></button>
+                <button id="delete" name="cfdbdel" class="button"
+                        onclick="this.form.submit();"><?php echo htmlspecialchars(__('Delete', 'contact-form-7-to-database-extension')); ?></button>
             </form>
             <?php
             $exp->export($form, array('submit_time' => $submitTime, 'filelinks' => 'link'));
@@ -1130,6 +1138,9 @@ class CF7DBPlugin extends CF7DBPluginLifeCycle implements CFDBDateFormatter {
             $view = new CFDBViewWhatsInDB;
             $view->display($this);
         }
+        ?>
+        </div>
+        <?php
     }
 
     static $checkForCustomDateFormat = true;

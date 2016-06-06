@@ -1,5 +1,7 @@
 <?php if(!defined('ABSPATH')) die('!');
-
+$loginurl = get_option('__wpdm_login_url');
+if($loginurl > 0)
+    $loginurl = get_permalink($loginurl);
 $reg_redirect =  $_SERVER['REQUEST_URI'];
 if(isset($params['redirect'])) $reg_redirect = esc_url($params['redirect']);
 if(isset($_GET['redirect_to'])) $reg_redirect = esc_url($_GET['redirect_to']);
@@ -13,7 +15,7 @@ if(get_option('users_can_register')){
     <?php } ?>
 <form method="post" action="" id="registerform" name="registerform" class="login-form">
 
-<input type="hidden" name="permalink" value="<?php the_permalink(); ?>" />
+    <input type="hidden" name="permalink" value="<?php the_permalink(); ?>" />
     <!-- div class="panel panel-primary">
 <div class="panel-heading"><b>Register</b></div>
 <div class="panel-body" -->
@@ -67,8 +69,12 @@ if(get_option('users_can_register')){
     <?php do_action("register_form"); ?>
 
 
-    <input type="hidden" value="" name="redirect_to">
-    <p class=""><button type="submit" class="btn btn-success btn-lg btn-block" id="registerform-submit" name="wp-submit"><i class="fa fa-user-plus"></i> &nbsp; <?php _e('Join Now!','wpdmpro'); ?></button></p>
+    <div class="row">
+        <div class="col-md-<?php echo ($loginurl != '')?8:12; ?>"><button type="submit" class="btn btn-success btn-lg btn-block" id="registerform-submit" name="wp-submit"><i class="fa fa-user-plus"></i> &nbsp; <?php _e('Join Now!','wpdmpro'); ?></button></div>
+        <?php if($loginurl != ''){ ?>
+        <div class="col-md-4"><a href="<?php echo $loginurl;?>" class="btn btn-default btn-lg btn-block" id="registerform-submit" name="wp-submit"><i class="fa fa-lock"></i> &nbsp; <?php _e('Login','wpdmpro'); ?></a></div>
+        <?php } ?>
+    </div>
 
     <!-- /div>
     </div -->

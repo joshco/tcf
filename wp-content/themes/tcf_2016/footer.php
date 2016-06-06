@@ -169,6 +169,9 @@
     <div id="modal-signup-text">Join <b>more than 10,000 Upstanders</b> who proudly stand against bullying online, in school, at work, or in their faith community by signing the <a href="/pledge">Upstander Pledge</a>.</div>
     <!-- form begin -->
     <div id="modal_signup_container">
+         <script type="text/javascript" src="//d1aqhv4sn5kxtx.cloudfront.net/actiontag/at.js"></script>
+	<div class="ngp-form" data-labels="inline" data-id="-4624407374704997632"></div>
+	
     <form id="new_home_page_new_signup_form" class="ajaxForm signup_form" method="POST" action="/forms/signups" enctype="multipart/form-data">
       <input name="authenticity_token" type="hidden" value="CeYuL4Dxby344DwrRIEutEUwJy2xunOWdNFuT9Z8RLA="/>
       <input name="page_id" type="hidden" value="18"/>
@@ -237,10 +240,9 @@ function doSomething() {
     if (myCookie == null) {
     var options = { };
     $('[data-remodal-id=modal-signup]').remodal(options).open();
-    }
-    
-    else {
+    } else {
     // do cookie exists stuff
+    $('[data-remodal-id=modal-signup]').remodal(options).open();
     }
 }
 ); 

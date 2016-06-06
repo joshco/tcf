@@ -70,13 +70,16 @@ class ShortCodes
      * @usage Short-code callback function for login/register form
      * @return string
      */
-    function LoginForm(){
-        if(is_array($params))
+    function LoginForm($params = array()){
+        if(isset($params) && is_array($params))
             extract($params);
         if(!isset($redirect)) $redirect = get_permalink(get_option('__wpdm_user_dashboard'));
         ob_start();
         //echo "<div class='w3eden'>";
-        include(WPDM_BASE_DIR . 'tpls/wpdm-be-member.php');
+        if(!isset($simple))
+            include(WPDM_BASE_DIR . 'tpls/wpdm-be-member.php');
+        else
+            include(WPDM_BASE_DIR . 'tpls/wpdm-login-form.php');
         //echo "</div>";
         return ob_get_clean();
     }

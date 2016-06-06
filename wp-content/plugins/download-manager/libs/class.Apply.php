@@ -348,11 +348,13 @@ class Apply {
             $matched = (is_array(@maybe_unserialize($package['access'])) && is_user_logged_in())?array_intersect($current_user->roles, @maybe_unserialize($package['access'])):array();
 
             if (($id != '' && is_user_logged_in() && count($matched) < 1 && !@in_array('guest', $package['access'])) || (!is_user_logged_in() && !@in_array('guest', $package['access']) && $id != '')) {
+                do_action("wpdm_download_permission_denied", $id);
                 wpdm_download_data("permission-denied.txt", __("You don't have permission to download this file", 'wpdmpro'));
                 die();
             } else {
 
                 if ($lock === 'locked' && $limit <= 0) {
+                    do_action("wpdm_invalid_download_link", $id, $key);
                     if ($key != '')
                         wpdm_download_data("link-expired.txt", __("Download link is expired. Please get new download link.", 'wpdmpro'));
                     else

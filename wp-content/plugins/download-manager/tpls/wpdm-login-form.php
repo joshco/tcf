@@ -10,13 +10,12 @@ if(isset($params['redirect'])) $log_redirect = esc_url($params['redirect']);
 if(isset($_GET['redirect_to'])) $log_redirect = esc_url($_GET['redirect_to']);
 ?>
 <div class="w3eden" id="wpdmlogin">
+<?php if(isset($params['logo']) && $params['logo'] != ''){ ?>
+    <div class="text-center wpdmlogin-logo">
+        <img src="<?php echo $params['logo'];?>" />
+    </div>
+<?php } ?>
 
-    <?php if(isset($params['logo']) && $params['logo'] != ''){ ?>
-        <div class="text-center wpdmlogin-logo">
-            <img src="<?php echo $params['logo'];?>" />
-        </div>
-    <?php } ?>
-    
     <?php if(isset($_SESSION['reg_warning'])&&$_SESSION['reg_warning']!=''): ?>  <br>
 
         <div class="alert alert-warning" align="center" style="font-size:10pt;">
@@ -74,7 +73,7 @@ if(isset($_GET['redirect_to'])) $log_redirect = esc_url($_GET['redirect_to']);
             <div class="row">
                 <div class="col-md-<?php echo ($regurl != '')?7:12; ?>"><button type="submit" name="wp-submit" id="loginform-submit" class="btn btn-block btn-primary btn-lg"><i class="fa fa-key"></i> &nbsp; <?php _e('Login','wpdmpro'); ?></button></div>
                 <?php if($regurl != ''){ ?>
-                    <div class="col-md-5"><a href="<?php echo $regurl; ?>" name="wp-submit" id="loginform-submit" class="btn btn-block btn-default btn-lg"><i class="fa fa-user-plus"></i> &nbsp; <?php _e('Register','wpdmpro'); ?></a></div>
+                <div class="col-md-5"><a href="<?php echo $regurl; ?>" name="wp-submit" id="loginform-submit" class="btn btn-block btn-default btn-lg"><i class="fa fa-user-plus"></i> &nbsp; <?php _e('Register','wpdmpro'); ?></a></div>
                 <?php } ?>
             </div>
 

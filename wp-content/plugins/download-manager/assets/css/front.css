@@ -1858,3 +1858,9 @@ legend {
 #wpdmreg, #wpdmlogin{
     margin: 0 auto;max-width: 450px;
 }
+.w3eden #registerform .input-group-addon .fa{
+    width: 20px;
+}
+.w3eden #registerform *{
+    border-radius: 0;
+}

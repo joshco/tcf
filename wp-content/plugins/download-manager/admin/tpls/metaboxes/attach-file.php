@@ -188,6 +188,7 @@ jQuery(function(){
 
     jQuery('body').on('click', '#dcf', function(){
         if(!confirm('<?php _e('Are you sure?', 'wpdmpro'); ?>')) return false;
+        jQuery('#wpdmfile').val('');
         jQuery('#cfl').html('<?php _e('<div class="w3eden"><div class="text-danger"><i class="fa fa-check-circle"></i> Removed!</div></div>', 'wpdmpro'); ?>');
     });
 

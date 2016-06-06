@@ -16,7 +16,7 @@
         
         <!-- _footer_signup.html -->
         
-        <div id="footer-yellow-bar">
+        <div id="footer-yellow-bar" style="display: none">
           <div id="email-sign-up-footer" class="email-signup form width-container">
             <div class="sidebar-header email">Stay Informed <span class="sidebar-section-text">Join now to receive email updates on news, events and more.</span></div>
             <!-- <a class="privacy-policy left">View privacy policy.</a> -->
@@ -39,8 +39,9 @@
             </form>
           </div>
         </div>
+
         <!-- footer-yellow-bar - end --> 
-        
+      
         <!-- /_footer_signup.html -->
         
         <footer class="clearfix width-container">

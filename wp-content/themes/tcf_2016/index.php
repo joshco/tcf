@@ -51,49 +51,7 @@ get_header(); ?>
 		<div id="home_yellow_bar"  class="mobile-visible">
 		<div id="home_signup_container">
 			<!-- TODO This probably doesn't work, have to figure out how to get this to NB -->
-		<form id="join_page_new_signup_form" class="ajaxForm signup_form" method="POST" action="/forms/signups" enctype="multipart/form-data">
-		  <input name="authenticity_token" type="hidden" value="CeYuL4Dxby344DwrRIEutEUwJy2xunOWdNFuT9Z8RLA="/>
-		  <input name="page_id" type="hidden" value="4"/>
-		  <input name="return_to" type="hidden" value="http://www.tylerclementi.org/join"/>
-		  <div class="email_address_form" style="display:none;">
-		    <p>
-		      <label for "email_address">Optional email code</label>
-		      <br/>
-		      <input name="email_address" type="text" class="text" id="email_address" autocomplete="off"/>
-		    </p>
-		  </div>
-		  <input id="page_id" name="page_id" type="hidden" value="4" />
-		  <div id="home-yellow-bar-header">Show you're an upstander by taking the <a href="/pledge">pledge</a>.</div>
-		  <div id="home-yellow-bar-text">Join <b>more than 10,000 Upstanders</b> who proudly stand against bullying online, in school, at work, or in their faith community by signing the <a href="/pledge">Upstander Pledge</a>.</div>
-		  <div id="home-yellow-bar-form">
-		    <div class="form_errors"></div>
-		    <div id="signup-name-first">
-		      <input class="text" id="signup_first_name" name="signup[first_name]" placeholder="First Name" type="text" />
-		    </div>
-		    <div id="signup-name-last">
-		      <input class="text" id="signup_last_name" name="signup[last_name]" placeholder="Last Name" type="text" />
-		    </div>
-		    <div id="signup-email">
-		      <input required="required" class="text" id="signup_email" name="signup[email]" placeholder="Email" type="text" />
-		    </div>
-		    <div id="signup-zip">
-		      <input required="required" class="text" id="signup_submitted_address" name="signup[submitted_address]" placeholder="Zip" type="text" />
-		    </div>
-		    <div id="signup-submit">
-		      <input class="submit-button" type="submit" name="commit" value="Sign Pledge" />
-		    </div>
-		    <div id="home-yellow-bar-updates">
-		      <input name="signup[email_opt_in]" type="hidden" value="0" />
-		      <input class="checkbox" checked="checked" id="signup_email_opt_in" name="signup[email_opt_in]" type="checkbox" value="1" />
-		      Send me updates from the Tyler Clementi Foundation. <a href="/privacy-policy">View privacy policy.</a></div>
-		    <!-- <div class="form_submit"></div> --> 
-		  </div>
-		  <!-- Form - End -->
-		  </div>
-		  <!-- Yellow Bar Container - DESKTOP - End -->
-		  </div>
-		  <!-- Yellow Bar - End -->
-		</form>
+		
 		
 		<!-- NEW MEMBER SIGNUP - YELLOW BAR -- END --> 
 		

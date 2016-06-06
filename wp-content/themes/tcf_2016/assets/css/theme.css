@@ -5110,3 +5110,88 @@ form input {
 form input.submit-button {
 	font-size: 1em
 }
+
+
+/* ngp action tag */
+/* button color #aa4747 */
+
+
+#modal-signup .at-form section.at-inner {
+    background-color: #ffcf00;;
+}
+
+.at-form .at-title {
+    display: none;
+}
+
+header.at-title {
+    display: none !important
+}
+
+header.at-markup {
+	display: none;
+}
+
+.at input[type="text"], .at input[type="password"], .at input[type="date"], .at input[type="datetime"], .at input[type="datetime-local"], .at input[type="month"], .at input[type="week"], .at input[type="email"], .at input[type="number"], .at input[type="search"], .at input[type="tel"], .at input[type="time"], .at input[type="url"], .at input[type="color"], .at textarea {
+    background-color: #ffffff !important;
+    
+}
+
+
+::-webkit-input-placeholder {
+   color: #555555 !important;
+   
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #555555 !important;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #555555 !important;  
+}
+
+:-ms-input-placeholder {  
+   color: #555555 !important;  
+}
+
+.at fieldset legend {
+    display: none !important
+}
+
+.at fieldset.at-fieldset {
+	border: none !important;
+	padding: 0 0 0 0 !important;
+}
+
+.at-form-submit {
+	padding: 0 0 0 0 !important;
+	text-align: center !important;
+}
+input.at-submit {
+	margin: 0 0 0 0 !important;
+	float: none !important;
+	width: 190px !important;
+}
+
+input.at-submit:after 
+{ 
+    content: "New text" !important; 
+    text-indent: 0 !important; 
+    display: block !important; 
+    line-height: initial !important; 
+/* New content takes up original line height */}
+.at-inner {
+    border: none !important
+}
+
+.at .btn-at-primary {
+    background-color: #aa4747 !important;
+    color: #fff;
+padding: .5em;
+	
+}
+
+#new_home_page_new_signup_form {
+	display: none;
+}

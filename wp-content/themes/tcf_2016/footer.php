@@ -170,7 +170,7 @@
     <!-- form begin -->
     <div id="modal_signup_container">
          <script type="text/javascript" src="//d1aqhv4sn5kxtx.cloudfront.net/actiontag/at.js"></script>
-	<div class="ngp-form" data-labels="inline" data-id="-4624407374704997632"></div>
+	<div class="ngp-form" data-labels="inline" data-template="minimal" data-id="-4624407374704997632"></div>
 	
     <form id="new_home_page_new_signup_form" class="ajaxForm signup_form" method="POST" action="/forms/signups" enctype="multipart/form-data">
       <input name="authenticity_token" type="hidden" value="CeYuL4Dxby344DwrRIEutEUwJy2xunOWdNFuT9Z8RLA="/>
@@ -233,16 +233,35 @@ modifier: ''
 </script> 
 <script type="text/javascript" src="http://tylerclementi.nationbuilder.com/themes/1/5463bb672213933389000001/0/attachments/14570205351461206479/default/jquery.remodal.js"></script> 
 <script type="text/javascript" language="javascript">
+  function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+    return null;
+}
+
 $(window).load(
+
+
 function doSomething() {
     var myCookie = Cookies.get('remodal_closed');
+    var myModalParam = getUrlParameter('modal');
 
-    if (myCookie == null) {
+    if (myCookie == null || (myModalParam != null )) {
     var options = { };
     $('[data-remodal-id=modal-signup]').remodal(options).open();
     } else {
     // do cookie exists stuff
-    $('[data-remodal-id=modal-signup]').remodal(options).open();
+    
     }
 }
 ); 

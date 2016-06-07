@@ -141,7 +141,7 @@
 						<a id="header_youtube" class="header_sm_img" href="https://www.youtube.com/user/tylerclementifund"></a> 
 					</div>
 				</nav>
-				<a href="#menu" class="menu-link"><i class="icon-menu"></i></a> 
+				<!-- <a href="#menu" class="menu-link"><i class="icon-menu"></i></a>-->
 				<!-- /_nav.html --> 
 	
 			</div>

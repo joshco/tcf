@@ -29,25 +29,18 @@ get_header(); ?>
 		
 		<!-- MOBILE QUICK NAV - MOBILE HOMEPAGE ONLY -- BEGIN --> 
 		
-		<!-- _header-mobile-quicknav.html --> 
-		<!--Mobile device only navigation -->
-		
-		<div id="mobile-quicknav-wrap" class="mobile-visible">
-		  <div id="header-mobile-quick-nav" role="navigation" class="width-container mobile-visible">
-		    <div class="row-fluid">
-		      <?php wp_nav_menu( array( 'theme_location' => 'mobile', 'menu_id' => 'mobile-menu' ) ); ?>
-		    </div>
-		    <!-- row fluid - end --> 
-		  </div>
-		  <!-- header-mobile-quick-nav - end --> 
-		</div>
-		<!-- mobile-quicknav-wrap - end --> 
-		<!-- /_header-mobile-quicknav.html --> 
-		
-		<!-- MOBILE QUICK NAV - MOBILE HOMEPAGE ONLY -- END --> 
 		
 		<!-- NEW MEMBER SIGNUP - HOMEPAGE ONLY - YELLOW BAR -- BEGIN -->
-		
+	<div id="mobile-quicknav-wrap" class="mobile-visible">
+		<div id="header-mobile-quick-nav" role="navigation" class="width-container mobile-visible">
+			<div class="row-fluid">
+				<?php wp_nav_menu( array( 'theme_location' => 'mobile', 'menu_id' => 'mobile-menu' ) ); ?>
+			</div>
+			<!-- row fluid - end -->
+		</div>
+		<!-- header-mobile-quick-nav - end -->
+	</div>
+
 		<div id="home_yellow_bar"  class="mobile-visible">
 		<div id="home_signup_container">
 			<!-- TODO This probably doesn't work, have to figure out how to get this to NB -->
